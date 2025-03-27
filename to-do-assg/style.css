@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f6ff; /* Light background for the app */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app {
+  background-color: #ffffff;
+  width: 350px;
+  max-width: 100%;
+  height: 550px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+#addNew {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.task {
+  background: #4b6e94; /* Dark Indigo background */
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task:hover {
+  background: #3a568b; /* Darker indigo on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.task .options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task .options i {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#msg {
+  color: red;
+}
+
+@media (max-width: 600px) {
+  .app {
+    width: 90%;
+    height: auto;
+  }
+}
+
+
+
+
