@@ -11,4 +11,3 @@ function checkEvenOdd(number) {
     }
 }
 checkEvenOdd(Number(num));
-
